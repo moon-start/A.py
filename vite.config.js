@@ -25,13 +25,16 @@ function moveOutputPlugin() {
 export default defineConfig({
   // base 的寫法：
   // base: '/Repository 的名稱/'
-  base: '/web-layout-training-vite/',
+  base: '/moon-start/',
   plugins: [
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
     ViteEjsPlugin(),
     moveOutputPlugin(),
   ],
   server: {
+    // package.json
+    // "dev": "vite --no-open --port 80",
+    // http://localhost/moon-start/pages/
     // 啟動 server 時預設開啟的頁面
     open: 'pages/index.html',
   },
