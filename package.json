@@ -7,7 +7,7 @@
     "dev": "vite --no-open --port 80",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "vite build && gh-pages  -b vite-pages  -d dist"
   },
   "devDependencies": {
     "ejs": "^3.1.9",
