@@ -32,6 +32,9 @@ export default defineConfig({
     moveOutputPlugin(),
   ],
   server: {
+    // host: 'localhost', // localhost 主機名稱
+    // port: 3000,        // 端口號
+    //-----------------------------------
     // package.json
     // "dev": "vite --no-open --port 80",
     // http://localhost/moon-start/pages/
