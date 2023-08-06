@@ -1,4 +1,4 @@
-# image: python:3.7.5
+image: python:3.7.5
 
 # 在 deploy 階段運行一個名為 "pages" 的 job
 pages:

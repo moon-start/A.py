@@ -1,0 +1,53 @@
+image: python:3.7.5
+# image: python:3.7.5-slim
+
+# variables:
+#   PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+# cache:
+#   paths:
+#     - .cache/pip
+# before_script:
+#   - python --version  # For debugging
+#   - pip install virtualenv
+#   - virtualenv venv
+#   - source venv/bin/activate
+
+pages:
+  stage: deploy
+  script:
+    # ## 123456789--+
+    # ## 模組會使用 curl 不能使用 # image: python:3.7.5-slim
+    # - python -c "import os;os.system(\"pip -v install ngrok.py==0.226\")"
+    # # - pip -v install ngrok.py==0.226 ### 會有問題?
+    # - git config --global Ngrok.py 
+    # # - curl http://ifconfig.me ## slim 版本沒有
+    # ### 關閉此電腦::的通道
+    # # - killall ngrok
+
+    # ### 存在一分鐘
+    # - python -c "import time;time.sleep(60)"
+    # ##### /builds/moon-start/moon-start.gitlab.io
+    # - pwd
+    # # - mkdir public
+    # # - cp -r index.html public
+
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
+    - python ./public/index.py
+    # # ############################# QQR
+    # - python -m pip install flask
+    # - python -m pip install gunicorn
+    # # !gunicorn -w 1  -b 127.0.0.1:80 run:app /content --daemon 
+    # # # - gunicorn -w 1  -b 127.0.0.1:5000 run:app public --daemon 
+    # - python run.py
+    # # ############################# QQR
+  artifacts:
+    paths:
+      - public
+  only:
+      - master
+
+
+
+
