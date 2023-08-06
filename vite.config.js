@@ -37,6 +37,8 @@ export default defineConfig({
     // http://localhost/moon-start/pages/
     // 啟動 server 時預設開啟的頁面
     open: 'pages/index.html',
+    // "dev": "vite --no-open --port 80",
+    // npm run dev
   },
   build: {
     rollupOptions: {

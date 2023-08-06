@@ -5,37 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact</title>
-    <script>
-    
-      // 獲取路徑
-      // var path = currentURL.substring(0, currentURL.lastIndexOf('/') + 1);
-
-      // // 顯示在控制台上
-      // console.log("Current URL: " + currentURL);
-      // console.log("File Name: " + fileName);
-      // console.log("Path: " + path);
-
-      // 在網頁載入後，自動導向至指定 URL
-      // window.location.href = "http://localhost/moon-start/pages/index.html";
-
-        // 獲取當前 URL
-        var currentURL = window.location.href;
-        // 指定目標 URL
-        // var targetURL = "http://localhost/moon-start/pages/index.html";
-
-        
-        // 獲取檔名
-        var fileName = currentURL.substring(currentURL.lastIndexOf('/') + 1);
-        var targetURL = "http://localhost/moon-start/pages/"+fileName;
-
-        // 檢查是否需要導向
-        if (  window.location.href  !== targetURL) {
-          // 導向至目標 URL
-        window.location.href = targetURL;
-        }
-        
-
-    </script>
   </head>
   <body>
     <%- include('./layout/header'); -%>
