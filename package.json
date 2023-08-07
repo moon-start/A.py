@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite  --no-open  --port 80",
+    "dev": "vite --no-open --port 80",
+    "index": "start chrome.exe --new-window http://localhost/A.py/pages/index.html && npm run dev",
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "vite build && gh-pages -d dist"
