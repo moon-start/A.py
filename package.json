@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "vite build && gh-pages -d dist -b pages",
-    "gitlab": "vite build && gitlab-pages --dist dist",
+    "gitlab": "gitlab-pages --dist dist",
     "lab": "vite build && gitlab-pages",
     "push": "git push gitlab main"
   },
