@@ -6,16 +6,16 @@ pages:
   stage: deploy
   script:
   # - mkdir .public
-  # - cp -r ./pages/* .public
-  # - mv .public public
+  - cp -r ./pages/* .public
+  - mv .public public
   - echo OK!!
 
   # 這是指定 job 的輸出 artifacts（產物）的部分。
   artifacts:
     paths:
     # public：指定 public 資料夾作為 artifacts，這意味著 public 資料夾的內容將作為部署
-    # - public
-    - pages
+    - public
+    # - pages
 
   # 這是設定 job 執行的條件，這裡設定為只在 master 分支有 commit 時執行。
   only:
