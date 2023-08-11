@@ -8,7 +8,7 @@
     "index": "start chrome.exe --new-window http://localhost/A.py/pages/index.html && npm run dev",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist -b pages -r gitlab",
+    "deploy": "vite build && gh-pages -d dist -b pages",
     "push": "git push gitlab main"
   },
   "devDependencies": {
