@@ -5,8 +5,8 @@ stages:
 build:
   stage: build
   script:
-    - sudo apt update
-    - sudo apt install nodejs npm
+    # - sudo apt update
+    - apt install nodejs npm
     
     - npm install
     - npm run build
