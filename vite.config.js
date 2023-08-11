@@ -57,3 +57,10 @@ export default defineConfig({
     outDir: 'dist',
   },
 });
+
+
+
+// npm install -g gh-pages
+
+// npm run build # 使用你的構建指令，生成構建內容至 dist 目錄
+// gh-pages -d dist # 將 dist 目錄的內容部署到 GitHub Pages
