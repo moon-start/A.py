@@ -21,6 +21,6 @@ pages:
   only:
   # - main
   # - gh-pages
-  - pages  # 選擇部署的分支 
+  - pages  # 選擇部署的分支  
   
 
