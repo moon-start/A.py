@@ -12,7 +12,7 @@ pages:
     # - node -v
     # - npm -v
   # script:
-    - npm run build
-    - gitlab-pages
+    - npm run gitlab
+    # - gitlab-pages
   only:
     - main  # 在 main 分支上觸發 CI/CD
