@@ -19,6 +19,6 @@ pages:
 
   # 這是設定 job 執行的條件，這裡設定為只在 master 分支有 commit 時執行。
   only:
-  # - main
-  - gh-pages
+  - main
+  # - gh-pages
 
