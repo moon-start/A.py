@@ -5,7 +5,7 @@ pages:
 #  deploy 階段
   stage: deploy
   script:
-  # - mkdir .public
+  - mkdir .public
   - cp -r ./pages/* .public
   - mv .public public
   - echo OK!!
