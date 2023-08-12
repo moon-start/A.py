@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "new": "start chrome.exe --new-window https://github.com/new",
+    "hub": "start chrome.exe --new-window https://github.com/new",
     "dev": "vite --no-open --port 80",
     "index": "start chrome.exe --new-window http://localhost/A.py/pages/index.html && npm run dev",
     "build": "vite build",
