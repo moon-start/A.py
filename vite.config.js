@@ -77,4 +77,3 @@ export default defineConfig({
 
 
 
-// "gitlab-pages": "^0.3.0",
