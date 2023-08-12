@@ -12,7 +12,10 @@
     "deploy": "vite build && gh-pages -d dist -b pages",
     "gitlab": "gitlab-pages --dist dist",
     "lab": "vite build && gitlab-pages",
-    "push": "git push gitlab main"
+    "push": "git push gitlab main",
+    "apps": "start chrome.exe --new-window https://github.com/settings/apps"
+
+
   },
   "devDependencies": {
     "ejs": "^3.1.9",
