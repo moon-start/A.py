@@ -67,16 +67,14 @@ export default defineConfig({
 
 
 // "deploy": "vite build && gh-pages -d dist -b pages -r github",
-
-
-
-
-
-
 // https://github.com/new
 // https://github.com/new?repository_name=your_repo_name&description=your_description&private=true&auto_init=true&gitignore_template=template_name&license_template=template_name
 // &team_id=your_team_id&parent_repo=parent_repo_name
-https://github.com/new?repository_name=A.py&auto_init=true
+// https://github.com/new?repository_name=A.py&auto_init=true
 // &gitignore_template=python
 // private=true 私有專案
 // auto_init=true  README 文件
+
+
+
+// "gitlab-pages": "^0.3.0",

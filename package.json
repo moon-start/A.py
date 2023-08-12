@@ -4,18 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "hub": "start chrome.exe --new-window https://github.com/new",
-    "dev": "vite --no-open --port 80",
-    "index": "start chrome.exe --new-window http://localhost/A.py/pages/index.html && npm run dev",
-    "build": "vite build",
-    "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist -b pages",
-    "gitlab": "gitlab-pages --dist dist",
-    "lab": "vite build && gitlab-pages",
-    "push": "git push gitlab main",
-    "apps": "start chrome.exe --new-window https://github.com/settings/apps"
-
-
+   
   },
   "devDependencies": {
     "ejs": "^3.1.9",
@@ -24,7 +13,6 @@
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
-    "gitlab-pages": "2.16.0",
     "glob": "^10.2.2",
     "sass": "^1.61.0",
     "sass-loader": "^13.2.2",
