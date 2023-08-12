@@ -9,8 +9,9 @@ build:
     - tar -xvf node-v18.17.1-linux-x64.tar.xz
     - cd node-v18.17.1-linux-x64
     - export PATH=$PATH:`pwd`/bin
-    - node -v
-    - npm -v
+    # - node -v
+    # - npm -v
+    
 
 
     
